@@ -1,6 +1,6 @@
 import React from "react";
 
-import { BrowserRouter as Router  , Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router  , Routes, Route, Navigate } from "react-router-dom";
 import Home from './pages/Home';
 import Hotel from './pages/Hotel'
 import AboutUs from './pages/AboutUs'
@@ -56,13 +56,13 @@ function App() {
     // </Router>
     <Router>
       <Routes>
-        <Route index element ={<Home/>}/>
-        <Route path ="/hepta/src/pages/Home.jsx" element ={<Home/>}/>
-        <Route path ="/hepta/src/pages/AboutUs.jsx" element ={<AboutUs/>}/>
-        <Route path ="/hepta/src/pages/Hotel.jsx" element ={<Hotel/>}/>
-        <Route path ="/hepta/src/pages/Gallery.jsx" element ={<Gallery/>}/>
-        <Route path ="/hepta/src/pages/News.jsx" element ={<News/>}/>
-        <Route path ="/hepta/src/pages/Contact.jsx" element ={<Contact/>}/>
+        <Route path="/" element ={<Navigate to="/home"/>}/>
+        <Route path ="/home" element ={<Home/>}/>
+        <Route path ="/aboutus" element ={<AboutUs/>}/>
+        <Route path ="/hotel" element ={<Hotel/>}/>
+        <Route path ="/gallery" element ={<Gallery/>}/>
+        <Route path ="/news" element ={<News/>}/>
+        <Route path ="/contact" element ={<Contact/>}/>
 
 
       </Routes>
