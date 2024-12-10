@@ -57,12 +57,12 @@ function App() {
     <Router>
       <Routes>
         <Route index element ={<Home/>}/>
-        <Route path ="/home" element ={<Home/>}/>
-        <Route path ="/aboutus" element ={<AboutUs/>}/>
-        <Route path ="/hotel" element ={<Hotel/>}/>
-        <Route path ="/gallery" element ={<Gallery/>}/>
-        <Route path ="/news" element ={<News/>}/>
-        <Route path ="/contact" element ={<Contact/>}/>
+        <Route path ="/hepta/src/pages/Home.jsx" element ={<Home/>}/>
+        <Route path ="/hepta/src/pages/AboutUs.jsx" element ={<AboutUs/>}/>
+        <Route path ="/hepta/src/pages/Hotel.jsx" element ={<Hotel/>}/>
+        <Route path ="/hepta/src/pages/Gallery.jsx" element ={<Gallery/>}/>
+        <Route path ="/hepta/src/pages/News.jsx" element ={<News/>}/>
+        <Route path ="/hepta/src/pages/Contact.jsx" element ={<Contact/>}/>
 
 
       </Routes>
