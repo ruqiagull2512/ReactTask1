@@ -57,7 +57,7 @@ function App() {
     // </Router>
     <Router>
       <Routes>
-        <Route index element ={<Home/>}/>
+        <Route path="/" element ={<Navigate to="/home"/>}/>
         <Route path ="/home" element ={<Home/>}/>
         <Route path ="/aboutus" element ={<AboutUs/>}/>
         <Route path ="/hotel" element ={<Hotel/>}/>
@@ -70,8 +70,8 @@ function App() {
     </Router>
   );
 }
-const root =ReactDOM.createRoot(document.getElementById('root'));
-root.render(<App/>);
+// const root =ReactDOM.createRoot(document.getElementById('root'));
+// root.render(<App/>);
 
 
 export default App;
