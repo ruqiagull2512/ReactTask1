@@ -1,4 +1,5 @@
 import React from "react";
+import ReactDOM from "react-dom/client"
 
 import { BrowserRouter as Router  , Routes, Route, Navigate } from "react-router-dom";
 import Home from './pages/Home';
@@ -56,7 +57,7 @@ function App() {
     // </Router>
     <Router>
       <Routes>
-        <Route path="/" element ={<Navigate to="/home"/>}/>
+        <Route index element ={<Home/>}/>
         <Route path ="/home" element ={<Home/>}/>
         <Route path ="/aboutus" element ={<AboutUs/>}/>
         <Route path ="/hotel" element ={<Hotel/>}/>
@@ -69,5 +70,8 @@ function App() {
     </Router>
   );
 }
+const root =ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App/>);
+
 
 export default App;
